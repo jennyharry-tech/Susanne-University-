@@ -1,0 +1,196 @@
+
+
+/* de gemensamma grundinställningarna på alla sidor */
+body {
+background-color: #ffffff;
+font-family: Arial, Helvetica, sans-serif;
+padding:0;
+margin:0 ;
+}
+
+h1 {
+   margin: 50px;
+}
+
+/* Sidornas struktur */
+
+main {
+padding: 2rem;
+}
+
+ 
+.skip-link {
+position: absolute;
+top: -40px; /* döljer utanför skärm */ 
+left: 0;
+background-color: #000;
+color: #fff;
+padding: 10px; /* texten får en jämn placering i rutan */ 
+text-decoration: none;
+
+}
+
+.skip-link:focus { 
+  top: 0;
+}
+
+
+header {
+display: flex;         
+align-items: center;   /* Centrerar */
+background-color: #D1FFFA; 
+padding: 5px;
+gap: 2px; /* Bildar mellanrum mellan loggan och texten */
+}
+
+.logo {
+width: 200px;/* Loggans storlek */
+height: auto;
+}
+
+nav {
+background-color: #333; /* Tydligare kontrast vid länkarna */
+padding: 10px;
+display: flex; /* Länkarna hamnar på rad */   
+justify-content: center; 
+gap: 70px; /* skapar mellanrum vid länkarna */
+}
+
+nav a {
+color: white;
+text-decoration: none;  /* Tar bort linjen under länken  */
+font-weight: bold;
+}
+
+nav a:hover {
+text-decoration: underline; /* skapar en linje när musen nuddar länken */ 
+}
+
+
+/* Inloggningssidan */
+
+.input-style {
+background-color: white;
+border: 2px solid #333;
+padding: 10px;
+}
+
+
+.loginsida {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.login-box {
+max-width: 600px;     
+margin: 40px auto;/* Centrerar */
+padding: 20px;
+background-color: #f9f9f9; 
+border-radius: 15px;
+}
+
+
+.login-box input {
+width: 100%;
+padding: 8px;
+}
+
+.login-box button {
+width: 100%;
+padding: 20px;
+background-color: #008000; 
+color: white; 
+border: none;
+border-radius: 5px ;
+font-size:1.1rem ; 
+cursor: pointer ; 
+
+
+}
+
+
+/* QUIZ-sidan  */
+
+
+.quiz-form {
+max-width: 600px; /* Gör att quizet inte blir för brett och svårläst */
+margin: 40px auto; /* Centrerar quizet och ger luft från menyn */
+padding: 20px;
+background-color: #f9f9f9; /* En mycket ljust grå färg för att skilja från vita bodyn */
+border-radius: 15px;
+}
+
+
+.question-section {
+margin-bottom: 30px;
+ padding: 15px;
+border-bottom: 1px solid #ddd; /* En linje mellan frågorna */
+}
+
+
+.question-section h3 {
+color: #333;
+margin-bottom: 15px;
+}
+
+
+.quiz-option {
+display: block;
+margin: 10px 0;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: white;
+cursor: pointer;
+
+}
+
+
+.quiz-option:hover {
+background-color: #D1FFFA; /* Din ljusblå färg */
+border-color: #6d141b;  /* Din mörkröda färg */
+}
+
+
+.submit-quiz {
+background-color: #008000;
+color: white;
+padding: 15px 30px;
+border: none;
+border-radius: 5px;
+font-size: 1.1rem;
+cursor: pointer;
+display: block;
+ width: 100%;
+}
+
+
+/* kurssida */
+
+/* KURSSIDAN */
+
+.course-list {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.kurs-kort {
+background-color: #f9f9f9;
+padding: 20px;
+border-radius: 10px;
+
+}
+
+.kurs-kort h2 {
+margin-top: 0;
+}
+
+
+@media (max-width: 700px) {
+.courses-page {
+padding: 1.5rem;
+} 
+ } 
